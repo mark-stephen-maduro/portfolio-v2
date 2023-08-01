@@ -1,0 +1,31 @@
+@import url('./variables.css');
+
+/* COMPONENTS */
+@import url('./components/cursor.css');
+@import url('./components/hero.css');
+@import url('./components/nav.css');
+@import url('./components/article.css');
+@import url('./components/animated-text.css');
+@import url('./components/ribbon.css');
+
+/* LAYOUT & UTILITIES */
+@import url('./layout.css');
+@import url('./typography.css');
+
+html {
+    overflow: auto;
+}
+
+body {
+    background-color: var(--body-background-color);
+    overflow: hidden;
+    font-size: 16px;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}

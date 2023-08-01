@@ -1,0 +1,20 @@
+:root {
+    --max-width: 1760px;
+    --grid-template-columns: repeat(12, 1fr);
+    --body-background-color: black;
+
+    /* NAVIGATION VARIABLES */
+    --column-background-color: rgba(23, 23, 23, 1);
+    --background-color-hover: #fff;
+    --text-color-hover: #000;
+
+    /* HEADING SIZES */
+    --h1: 5.5rem;
+    --h2: 2rem;
+
+    /* CARD COLORS */
+    --card-background-color: rgba(12,12,12, 1);
+
+    /* SCREEN SIZES */
+    --mobile: 767px;
+}

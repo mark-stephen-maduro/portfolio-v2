@@ -1,0 +1,195 @@
+.hero {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    padding: 25px 0;
+}
+
+.slogan {
+    position: relative;
+    grid-column: span 8;
+    padding: 25px 0;
+}
+
+.slogan h1 {
+    position: relative;
+    display: block;
+    font-size: var(--h1);
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1;
+    max-width: 15ch;
+    overflow: hidden;
+}
+
+.slogan h2 {
+    font-size: var(--h2);
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 40ch;
+}
+
+.github {
+    position: relative;
+    grid-column: span 4;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.github-inner {
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    align-items: center;
+    background-color: var(--card-background-color);
+    border-radius: 4px;
+}
+
+.github-animated-text {
+    display: flex;
+    height: 18px;
+    position: relative;
+    margin-top: 5px;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.github-animated-text h2 {
+    font-weight: 400;
+}
+
+.github-inner .github-image {
+    position: relative;
+}
+
+.github-inner .github-image::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../assets/images/verified.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.github-inner img {
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.github h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.github .badge {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    gap: 7px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.github .badge a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    color: black;
+}
+
+.github .badge img {
+    border: none;
+}
+
+.github-logo {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.github .fa-heart {
+    width: 1em;
+    color: red;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-size: 18px
+}
+
+.tech-wrapper {
+    padding: 4rem 0;
+    border-top: 1px solid rgba(23,23,23,1);
+}
+
+.tech-wrapper p {
+    max-width: 75ch;
+}
+
+.technologies {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.tech-image {
+    height: 50px;
+    width: 100%;
+    background-position: center center;
+    background-size: auto 27px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+.pulse {
+    box-shadow: 0 0 0 0 rgba(23, 25, 119, 0.322);
+	transform: scale(1);
+	animation: pulse 1s infinite;
+}
+
+/* SWIPER */
+.technologies .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(23, 25, 119, 0.322);
+	}
+
+	70% {
+		transform: scale(1.1);
+		box-shadow: 0 0 0 10px rgba(23, 25, 119, 0.171);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+@media (max-width: 767px) {
+
+    .hero .slogan,
+    .hero .github {
+        grid-column: span 12;
+    }
+}

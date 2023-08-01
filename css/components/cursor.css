@@ -1,0 +1,18 @@
+.cursor-glow {
+    height: 25%;
+    width: 50%;
+    /* background-color: red; */
+    background: rgba(37, 6, 146, 0.479);
+    background: radial-gradient(circle, rgba(15, 24, 110, 0.185) 0%,  rgba(255,255,255,0) 70%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    filter: blur(25px);
+    transition-timing-function: linear;
+    transition: opacity 1s ease-out;
+  }
+  

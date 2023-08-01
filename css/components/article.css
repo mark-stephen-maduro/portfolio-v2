@@ -1,0 +1,13 @@
+article {
+    background-color: var(--card-background-color);
+    min-height: 500px;
+    border-radius: 4px;
+    width: 100%;
+    /* FLIP EFFECT */
+    /* transform-origin: 50% 0%;
+    translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 0.6914;
+    transform: translate3d(0px, 0px, 0px) rotateX(-12.3457deg); */
+}
