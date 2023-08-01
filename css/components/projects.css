@@ -1,0 +1,40 @@
+.project {
+    background: linear-gradient(300deg, rgba(0, 0, 0, 0.877), rgb(255 255 255 / 5%)), var(--project-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    text-transform: uppercase;
+}
+
+.project .project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 0;
+}
+
+.project img {
+    height: 24px;
+    padding: 0 5px 0 0;
+}
+
+.project p {
+    padding: 0 25px 0 0;
+}
+
+.content-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.content-location {
+    display: flex;
+}
+
+.content-location p {
+    font-size: 12px;
+}
