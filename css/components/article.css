@@ -1,6 +1,5 @@
 article {
     background-color: var(--card-background-color);
-    min-height: 500px;
     border-radius: 4px;
     width: 100%;
     /* FLIP EFFECT */
@@ -10,4 +9,23 @@ article {
     scale: none;
     opacity: 0.6914;
     transform: translate3d(0px, 0px, 0px) rotateX(-12.3457deg); */
+}
+
+article img,
+article video {
+    width: inherit;
+    grid-row: 2 / -1;
+    grid-column: 1;
+}
+
+article .article-content {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 2rem;
+}
+
+.article-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0;
 }

@@ -252,3 +252,27 @@
     background-position: 100% -100%
   }
 }
+
+/* WAVY ANIMATION */
+.wavy {
+  display: flex;
+  position: relative;
+}
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+@keyframes wavy {
+  0%,40%,100% {
+    transform: translateY(0);
+    color: #fff;
+  }
+  20% {
+    transform: translateY(-20px);
+    color: #4471ee;
+  }
+}

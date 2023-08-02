@@ -9,6 +9,11 @@
     text-transform: uppercase;
 }
 
+article:hover .wavy span {
+  animation: wavy 500ms 1s;
+  animation-delay: calc(.1s * var(--i));
+}
+
 .project .project-content {
     display: flex;
     flex-direction: column;
@@ -37,4 +42,18 @@
 
 .content-location p {
     font-size: 12px;
+}
+
+.swiper-projects .swiper-slide {
+    width: 0;
+    transition: all 550ms ease;
+}
+
+.swiper-projects .swiper-slide-active {
+    width: 35% !important;
+    transition: width 250ms ease;
+}
+
+.swiper-projects .swiper-slide-next {
+    width: 65% !important;
 }

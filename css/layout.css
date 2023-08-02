@@ -35,3 +35,25 @@
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.masonry-container {
+    column-count: 3;
+    gap: 8px;
+}
+
+.masonry-column {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
+
+.min-height-500 {
+    min-height: 500px;
+}
