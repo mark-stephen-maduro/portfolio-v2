@@ -9,6 +9,23 @@
     text-transform: uppercase;
 }
 
+article::after {
+    content: url('../../assets/images/link.svg');
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 25px;
+    transition: all 100ms ease-in;
+}
+
+article:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
 article:hover .wavy span {
   animation: wavy 500ms 1s;
   animation-delay: calc(.1s * var(--i));

@@ -1,4 +1,5 @@
 article {
+    position: relative;
     background-color: var(--card-background-color);
     border-radius: 4px;
     width: 100%;
