@@ -41,7 +41,6 @@
     padding: 25px;
     align-items: center;
     background-color: var(--card-background-color);
-    border-radius: 4px;
 }
 
 .github-animated-text {
@@ -94,7 +93,6 @@
     text-transform: uppercase;
     margin-top: 10px;
     padding: 5px 15px;
-    border-radius: 4px;
     background-color: #fff;
 }
 

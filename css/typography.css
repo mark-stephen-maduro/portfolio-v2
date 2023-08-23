@@ -10,3 +10,7 @@ p {
     padding-top: clamp(1.125rem,11.263157894736842px + .8771929824561403vw,1.625rem);
     line-height: 1.5;
 }
+
+.text-gray {
+    color: rgb(128,128,128);
+}

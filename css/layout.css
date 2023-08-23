@@ -52,6 +52,9 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 8px;
     break-inside: avoid;
+    perspective: 1000px; 
+    perspective-origin: 50% 0; 
+    transform-style: preserve-3d;
 }
 
 .min-height-500 {
