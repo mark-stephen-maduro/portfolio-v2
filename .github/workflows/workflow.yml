@@ -1,5 +1,5 @@
 # Name of workflow to be displyed on Github Console
-name: Build and PR Workflow
+name: Notification
 
 # Triggers the workflow on separate events 
 on:
@@ -21,7 +21,7 @@ jobs:
     # Only run this workflow if it target is master branch on pull_request event
     if: ${{ github.base_ref == 'master' && github.event_name == 'pull_request' }}
     steps:
-      - uses: craftech-io/slack-action@v1
-        with:
-          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        if: always()
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
