@@ -2,6 +2,7 @@ name: The name of your workflow
 on:
   workflow_dispatch:
   pull_request:
+    branches: [master]
     types:
       - opened
       - reopened
