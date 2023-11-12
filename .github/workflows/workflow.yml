@@ -1,5 +1,5 @@
 name: The name of your workflow
-on [push]
+on: [push]
 
 jobs:
   deploy:
