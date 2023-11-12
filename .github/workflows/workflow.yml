@@ -25,6 +25,6 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_MESSAGE: ${{ github.event.pull_request.title }} >blockquote *_<${{ github.event.pull_request.html_url }}|Pull Request Link>_*
+          SLACK_MESSAGE: ${{ github.event.pull_request.title }} >*_<${{ github.event.pull_request.html_url }}|Pull Request Link>_*
           MSG_MINIMAL: commit
           SLACK_FOOTER: Automated workflow notification
