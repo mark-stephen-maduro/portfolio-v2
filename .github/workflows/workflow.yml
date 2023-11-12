@@ -16,17 +16,11 @@ on:
 jobs:
   # "notify" workflow for slack notification
   notify:
-
     name: Notify on Slack
     runs-on: ubuntu-latest
-    # Only run this workflow when "build" workflow succeeds
-    needs: [build]
-
     # Only run this workflow if it target is master branch on pull_request event
     if: ${{ github.base_ref == 'master' && github.event_name == 'pull_request' }}
-
     steps:
-
       - uses: abinoda/slack-action@master
         env:
           # required
